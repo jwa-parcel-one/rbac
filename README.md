@@ -1,14 +1,18 @@
 #PHP-RBAC v2.x
 
-PHP-RBAC is the de-facto authorization library for PHP. It provides developers with NIST Level 2 Hierarchical Role Based Access Control and more, in the fastest implementation yet.
+PHP-RBAC is an authorization library for PHP. It provides developers with NIST Level 2 Hierarchical Role Based Access Control and more, in the fastest implementation yet.
 
-**Current Stable Release:** [PHP-RBAC v2.0]()
+**Current Stable Release:** [PHP-RBAC v2.0](https://sourceforge.net/projects/phprbac/files/latest/download?source=dlp)
+
+##Connect With Us
 
 * Home Page: [http://phprbac.net/](http://phprbac.net/)
 * OWASP Project Page: [https://www.owasp.org/index.php/Phprbac](https://www.owasp.org/index.php/Phprbac)
-* User Documentation: [http://phprbac.net/docs_contents.php](http://phprbac.net/docs_contents.php)
-* Development Documentation: [https://github.com/OWASP/rbac/wiki](https://github.com/OWASP/rbac/wiki)
-* Support: [https://github.com/OWASP/rbac/issues?state=open](https://github.com/OWASP/rbac/issues?state=open)
+* PHP-RBAC Documentation: [http://phprbac.net/docs_contents.php](http://phprbac.net/docs_contents.php)
+* PHP-RBAC Wiki: [https://github.com/OWASP/rbac/wiki](https://github.com/OWASP/rbac/wiki)
+* PHP-RBAC API: [http://phprbac.net/api.php](http://phprbac.net/api.php)
+* Issue Tracker: [https://github.com/OWASP/rbac/issues?state=open](https://github.com/OWASP/rbac/issues?state=open)
+* Mailing List: [https://lists.owasp.org/mailman/listinfo/owasp_phprbac](https://lists.owasp.org/mailman/listinfo/owasp_phprbac)
 
 ##What is an Rbac System?
 
@@ -32,18 +36,18 @@ For Installation Instructions please refer to the "[Getting Started](http://phpr
     
 With a 'use' statement:
 
-    use PhpRbac;
-
-    $rbac = new Rbac();
+        use PhpRbac;
+        
+        $rbac = new Rbac();
 
 Without a 'use' statement, outside of a namespace:
-
-    $rbac = new PhpRbac\Rbac();
+        
+        $rbac = new PhpRbac\Rbac();
 
 Without a 'use' statement, inside of another namespace (notice the leading backslash):
+        
+        $rbac = new \PhpRbac\Rbac();
 
-    $rbac = new \PhpRbac\Rbac();
-    
 ##PHP-RBAC and PSR
 
 PHP-RBAC's Public API is now fully PSR-0, PSR-1 and PSR-2 compliant.
@@ -63,15 +67,17 @@ We are in the process of refactoring the PHP-RBAC internals. We have two goals i
 * To meet modern PHP OOP "Best Practices"
 * To meet PHP-FIG PSR compliance: http://www.php-fig.org/
 
-With a PSR compliant Public API already in place we can continue to work towards our goals one piece at a
-time without altering the Public API that developers are working with and rely on, making the transition as
-seamless and invisible as possible.
+With a PSR compliant Public API already in place we can continue to work towards our goals one piece at a 
+time without altering the Public API that developers are working with and rely on, making the transition as seamless 
+and invisible as possible.
 
 ##Contributing##
 
 We welcome all contributions that will help make PHP-RBAC even better tomorrow than it is today!
 
-**How You Can Help:**
+Please visit the [PHP-RBAC Wiki](https://github.com/OWASP/rbac/wiki) to learn about our development process and workflow.
+
+###How You Can Help
 
 * Report Bugs, Enhancement Requests or Documentation errors using our [Issue Tracker](https://github.com/OWASP/rbac/issues?state=open)
 * [Choose a Bug](https://github.com/OWASP/rbac/issues?state=open) to work on and submit a Pull Request
